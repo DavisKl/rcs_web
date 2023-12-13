@@ -1,0 +1,22 @@
+body{
+    background-image: url(https://www.freecodecamp.org/news/content/images/size/w2000/2022/09/jonatan-pie-3l3RwQdHRHg-unsplash.jpg);
+    height: 40%;
+    width: 50%;
+
+}
+
+.backgroundGreen{
+    background-color: green;
+}
+.testParagraph{
+    color: red;
+    text-align: center;
+}
+.testAllignCenter{
+    text-align: center;
+    color: blue;
+}
+/* p{
+    background-color: rgb(42, 42, 116);
+    color: white;
+} */
