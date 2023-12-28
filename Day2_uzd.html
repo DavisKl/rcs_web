@@ -5,17 +5,31 @@
     </head>
    <body>
         <div>
-
             <button id = "btn1" class= "btn1" onClick="testFunction()"> Nospied mani</button>
+            <button id = "btn2" class= "btn2" onClick="testFunction2()"> Nospied mani</button>
         </div>
         <div>
         <script>
             function testFunction(){
                 let sum = 0;
-                for(let i = 1; i < 10; i++){
+                for(let i = 1; i <= 10; i++){
                     sum+= i;  
                 }
                 console.log(sum);
+            }
+
+            function testFunction2(){
+                let variable = 15;
+
+                if(variable % 3 == 0 && variable % 5 == 0){
+                    console.log("FizzBuzz");
+                }else if(variable % 5 == 0){
+                    console.log("Buzz");
+                }else if (variable % 3 ==0){
+                    console.log("Fizz");
+                }else{
+                    console.log("Nope")
+                }
             }
         </script>
         </div>
