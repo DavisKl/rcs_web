@@ -50,4 +50,10 @@ body{
   padding: 5px;
 
 }
+button{
+    background-color: blueviolet;
+    color: #000;
+    height: 5%;
+    width: 10%;
+}
 

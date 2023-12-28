@@ -16,6 +16,13 @@ body{
     text-align: center;
     color: blue;
 }
+
+button{
+    background-color: blueviolet;
+    color: #000;
+    height: 5%;
+    width: 10%;
+}
 /* p{
     background-color: rgb(42, 42, 116);
     color: white;
