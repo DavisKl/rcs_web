@@ -1,14 +1,23 @@
 <html>
-    <link rel="stylesheet" href="style_2_uzd.css">
-    <button id = "btn1" class= "btn1" onclick="testFunction()"> Nospied mani</button>
 
-    <script>
-        function testFunction(){
-            for(let i = 0; i < 10; i++){
-            
-                console.log(i);
+    <head>
+     <link rel="stylesheet" href="style_2_uzd.css">
+    </head>
+   <body>
+        <div>
+
+            <button id = "btn1" class= "btn1" onClick="testFunction()"> Nospied mani</button>
+        </div>
+        <div>
+        <script>
+            function testFunction(){
+                let sum = 0;
+                for(let i = 1; i < 10; i++){
+                    sum+= i;  
+                }
+                console.log(sum);
             }
-        }
-    </script>
-
-    </html>
+        </script>
+        </div>
+    </body>
+</html>
