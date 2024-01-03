@@ -1,0 +1,16 @@
+.btn1{
+    background-color: red;
+    color: white;
+    height: 120px;
+    width: 120px;
+}
+
+.btn2{
+    background-color: blue;
+    color: red;
+    height: 120px;
+    width: 120px;
+}
+.input-form{
+    padding-top: 50px;
+}
