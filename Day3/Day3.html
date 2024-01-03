@@ -13,19 +13,25 @@
         </div>
         <div>
             
-            <button id = "btnl2"> Nē, mani!</button>
+            <button id = "btn2"> Nē, mani!</button>
         </div>
         <div class="input-form">
             <input type="text" id="input1" class="testInput" placeholder="Ievadi tekstu">
-            <button id = "btnl"class= "btnl" onclick="testFunction()"> Nospied mani</button>
+            <button id = "btn1"class= "btn1" onclick="testFunction()"> Nospied mani</button>
         </div>
+        <button class= "btn2" onclick="testFunction2()"> Nospied mani</button>
+        <p>
+
+        </p>
         <p class="testParagraph testAlignCenter">Testa teksts</p>
         <p>Testa2 teksts2</p>
 
         <script>
+            let a = 5;
             function testFunction(){
-                document.getElementById("btn1").style.backgroundColor ("red");
                 let userInput = document.getElementById("input1").value;
+                document.getElementById("btn1").style.backgroundColor = "red";
+                
                 alert(userInput);
             }
         </script>

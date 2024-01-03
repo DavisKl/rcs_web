@@ -4,11 +4,31 @@
      <link rel="stylesheet" href="style_3_uzd.css">
     </head>
    <body>
+        
+   
         <div class="input-form">
             <button id = "btn1" class= "btn1" onClick="testFunction()"> Pieņemt vērtību</button>
             <input type="number" id="input1" class="testInput" placeholder="Ievadi skaitli">
+        <button id = "btn2" > Nospied Mani!</button>
         </div>
+
+        <p>
+            Poga nospiesta <span id="display">0</span> reizes
+    
+        </p>
+
         <script>
+                let count = 0;
+                let btn2 = document.getElementById("btn2");
+                let disp = document.getElementById("display");
+                btn2.onclick = function () {
+                    count++;
+                    innerHTML = count;
+                    disp.innerHTML = count;
+                }
+            
+            
+            
             function testFunction(){
                 let userInput = document.getElementById("input1");
 
