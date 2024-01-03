@@ -19,8 +19,12 @@
             <input type="text" id="input1" class="testInput" placeholder="Ievadi tekstu">
             <button id = "btn1"class= "btn1" onclick="testFunction()"> Nospied mani</button>
         </div>
+        <div>
+        <button class= "btn3" onclick="sample()"> Sadalīt tekstu</button>
         <button class= "btn2" onclick="testFunction2()"> Nospied mani</button>
+        </div>
         <p>
+            jauns teksts
 
         </p>
         <p class="testParagraph testAlignCenter">Testa teksts</p>
@@ -33,6 +37,21 @@
                 document.getElementById("btn1").style.backgroundColor = "red";
                 
                 alert(userInput);
+            }
+
+            function sample(){
+                // const num = [1, 4, 7, 10, 15];
+                // num[1] = 7;
+
+                // for(let i = 0; i < num.length; i++){
+                //     alert(num[i]);
+                // }
+
+                let text = "1,4,7,10,15";
+                let arr = text.split(",");
+                for(let i = 0; i < arr.length; i++){
+                    alert(arr[i]);
+                }
             }
         </script>
     </body>
