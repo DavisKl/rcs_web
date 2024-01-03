@@ -8,27 +8,18 @@
             <button id = "btn1" class= "btn1" onClick="testFunction()"> Pieņemt vērtību</button>
             <input type="number" id="input1" class="testInput" placeholder="Ievadi skaitli">
         </div>
-        <div>
         <script>
             function testFunction(){
-                let userInput = document.getElementById("input1").value;
-                document.getElementById("btn1").style.backgroundColor ("red");
+                let userInput = document.getElementById("input1");
 
-                if(number % 2 == 0){
-
-                    document.getElementById("input1").style.backgroundColor ("red");
+                if(userInput.value % 2 == 0){
+                    userInput.style.backgroundColor = "red";
                 }else{
-                    document.getElementById("input1").style.backgroundColor ("green");
+                    userInput.style.backgroundColor = "green";
                 }
 
 
             }
-
-            function testFunction2(){
-
-
-            }
         </script>
-        </div>
     </body>
 </html>
