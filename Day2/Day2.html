@@ -1,30 +1,20 @@
 <html>
     <head>
-        <title>Fluffy unicorn</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="backgroundGreen">
-            <h2 class = "testAlignCenter" style="color: red;">Fluffy unicorn</h2>
-            <img src="https://media.giphy.com/media/3o7TKMt1VVNkHV2PaE/giphy.gif" alt="Fluffy unicorn">
-        </div>
-        <div class = "backgroundPicture">
-            <p>Mana jaunā lapa</p>
-        </div>
         <div>
-            <button id = "btnl"class= "btnl" onclick="testFunction()"> Nospied mani</button>
-        </div>
-        <button id = "btnl2"> Nē, mani!</button>
-
-        <p class="testParagraph testAlignCenter">Testa teksts</p>
-        <p>Testa2 teksts2</p>
+            <button id = "btn1"class= "btnl" onclick="testFunction()"> Nospied mani</button>
+            <button id = "btn2"> Nē, mani!</button>
+        </div>   
+    
 
         <script>
             function testFunction(){
                 let a = 5;
                 console.log(a);
                 let b = "5";
-                if(a==b){
+                if(a===b){
                     console.log("Vienādi");
                 }else{
                     console.log("Nevienādi");
