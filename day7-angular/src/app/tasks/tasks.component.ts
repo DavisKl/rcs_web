@@ -18,6 +18,7 @@ export class TasksComponent implements OnInit{
   }
 
   demoOut(): void{
+
     console.log("Sveiki " + this.inputValue + "!");
   }
 
