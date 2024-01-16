@@ -1,0 +1,78 @@
+<html>
+
+    <head>
+     <link rel="stylesheet" href="style_4_uzd.css">
+    </head>
+   <body>
+        <div class="input-form">
+            <button id = "btn1"  onClick="task1()"> Pieņemt vērtību</button>
+            <button id = "btn2"  onClick="task2()"> Pieņemt vērtību uzd 2</button>
+            <button id = "btn3" onClick="task3()"> Ievadi datu masīvu!</button>
+            <input type="text" id="input1" placeholder="Ievadi skaitļus">
+            <button id = "btn4" onClick="task3_1()"> Ievadi meklējamo skaitli</button>
+            <input type="text" id="input2" placeholder="Ievadi skaitļus">
+
+
+        </div>
+        <script>
+                let arrToFind = [];
+  
+            function task1(){
+                let userInput = document.getElementById("input1").value;
+                
+                let arr = userInput.split(",");
+
+                let max = parseInt(arr[0]);
+                let min = parseInt(arr[0]);
+
+                for(let i = 0; i<arr.length; i++){
+                    if(arr[i] > max){
+                        max = parseInt(arr[i]);
+                    }if(arr[i] < min){
+                        min = parseInt(arr[i]);
+                    }
+                }
+
+                alert(max);
+                alert(min);
+
+            }
+
+            function task2(){
+                let userInput = document.getElementById("input1").value;
+                let arr = userInput.split(",");
+                let similar = ["Nav vienādu skaitļu"];
+                let index = 0;
+
+                for(let i = 0; i < arr.length; i++){
+                   for(let j = i; j < arr.length; j++){
+                    if(i!=j && arr[i]==arr[j]){
+                        similar[index] = arr[i];
+                        index++;
+                    }
+                   }
+                }
+                alert(similar);
+            }
+
+            function task3(){
+                let userInput = document.getElementById("input1").value;          
+                let arr = userInput.split(",");
+                arrToFind = arr;
+            }
+
+            function task3_1(){
+                let userInput = document.getElementById("input2").value;
+                serchedValue = "Nav tāda skaitļa!";
+
+                for(let i = 0; i< arrToFind.length; i++){
+                    if(arrToFind[i]== userInput){
+                        serchedValue = userInput;
+                    }
+                }
+                console.log(serchedValue);
+            }
+
+        </script>
+    </body>
+</html>
