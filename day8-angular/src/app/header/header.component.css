@@ -16,10 +16,7 @@
   border-radius: 4px;
 }
 
-.header a.logo {
-  font-size: 30px;
-  font-weight: bold;
-}
+
 
 .header a:hover {
   background-color: #ddd;
@@ -29,20 +26,4 @@
 .header a.active {
   background-color: rgba(51, 53, 146, 0.233);
   color: white;
-}
-
-.header-right {
-  float: center;
-}
-
-@media screen and (max-width: 1000px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: center;
-  }
-  
-  .header-center {
-    float: none;
-  }
 }
