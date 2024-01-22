@@ -1,23 +1,34 @@
-<div class="footer">
+<footer class="footer">
+
     <div class="row1">
         <div class="column1">
-            <ul>
-                <li href="#Galvenā">Galvenā</li>
-                <li href="#contact">Par mani</li>
-                <li href="#picture">Smieklīga bilde</li>
+            <h3>Izvēlne:</h3>
+            <ul class = "footer-links">
+                <li><a routerLink="/galvena" 
+                    routerLinkActive="acctive"
+                    ariaCurrentWhenActive="page">
+                    Galvenā
+                </a></li>
+                <li><a routerLink="/contact"
+                    ariaCurrentWhenActive="page">
+                    Par mani
+                </a></li>
+                <li><a routerLink="/picture"
+                    ariaCurrentWhenActive="page">
+                    Smieklīga bilde
+                </a></li>
             </ul>
         </div>
     </div>
-  </div>
-  
-  <div class="footer">
     <div class="row2">
         <div class="column2">
             <ul>
+                <h4>Kontakti:</h4>
                 <li href="#name">Vārds: Jānis Bērziņš</li>
                 <li href="#email">e-pasts:</li>
                 <li href="#phone">Tel.Nr. 24567654</li>
             </ul>
         </div>
     </div>
-  </div>
+ 
+</footer>
