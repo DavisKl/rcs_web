@@ -8,6 +8,7 @@
     background-color: #1f1e1eb7;
     color: white;
     font-size: medium;
+
  }
 
  .footer-links {
@@ -34,6 +35,7 @@
     float: left;
     flex: 33.33%;
     padding: 5px;
+    margin-left: 20px;
   }
 
   .row2 {
@@ -44,6 +46,7 @@
     float: right;
     flex: 33.33%;
     padding: 5px;
+    margin-right: 20PX;
   }
 
 
