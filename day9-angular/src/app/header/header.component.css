@@ -1,27 +1,25 @@
+.button {
+  box-shadow: inset rgba(39, 10, 10, 0.253);
+  background: rgba(15, 9, 9, 0.452);
+  border-radius: 6px;
+  border: 5px;
+  cursor: pointer;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  padding: 6px 24px;
+}
+.activebutton {
+  box-shadow: inset 0 1px 0 0 #1b1c1d;
+  background: #3f4041;
+  border: 1px solid #02050800;
+  color: #ffffff;
+  text-shadow: 0 1px 0 #101111;
+}
+
 .header {
     text-align: center;
   overflow: hidden;
   background-color: #1f1e1eb7;
   padding: 30px 20px;
-}
-
-.header a {
-  float: center;
-  color: rgb(253, 253, 253);
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px; 
-  line-height: 25px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.header a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.header a.active {
-  background-color: rgba(51, 53, 146, 0.233);
-  color: white;
 }
