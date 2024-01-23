@@ -7,6 +7,7 @@ import { AdditionComponent } from './addition/addition.component';
 import { SubstractionComponent } from './substraction/substraction.component';
 import { MultiplyComponent } from './multiply/multiply.component';
 import { DivideComponent } from './divide/divide.component';
+import { StringListComponent } from './string-list/string-list.component';
 
 @Component({
   selector: 'app-root',
@@ -20,7 +21,9 @@ import { DivideComponent } from './divide/divide.component';
     AdditionComponent,
     SubstractionComponent,
     MultiplyComponent,
-    DivideComponent],
+    DivideComponent,
+    StringListComponent
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
