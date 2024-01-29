@@ -1,7 +1,7 @@
 <header>Mājas zvēri!</header>
-<div>
-<input type = "number" [(ngModel)] = "inputValue1" plaveholder="Ievadi kuru kārtas dzīvnieka vārdu vēlies nomainīt"/>
-<input type="text" [(ngModel)] = "inputValue2" placeholder="Ievadi jauno vārdu"/>   
+<div class = "replace">
+<input type = "number" id= "index" [(ngModel)] = "inputValue1"/>
+<input type="text" id= "animalNewName" [(ngModel)] = "inputValue2" placeholder="Ievadi jauno vārdu"/>   
 <button (click) = "newName()">Ievadīt</button>
 </div>
 <div class="frame" *ngFor="let animal of lst">

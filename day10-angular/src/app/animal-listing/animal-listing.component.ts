@@ -1,12 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { link } from 'fs';
-import { Address } from 'cluster';
-import { HttpRequest } from '@angular/common/http';
-import path from 'path';
-import { Url } from 'url';
-import { RouterLink, UrlMatchResult, defaultUrlMatcher } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { AnimalService } from '../animal.service';
 
 @Component({
   selector: 'app-animal-listing',
@@ -17,53 +12,35 @@ import { FormsModule } from '@angular/forms';
 })
 export class AnimalListingComponent implements OnInit{
   
-  inputValue1 = "";
-  inputValue2 = "";
+    inputValue1 = "";
+    inputValue2 = "";
+
+  lst: Animals[] = [];
+
+
 
   newName(): void{
     let a = parseInt(this.inputValue1) - 1;
     let b = this.inputValue2;
 
-    if(a <= this.lst.length){
+    if(a > 0 && a <= this.lst.length){
       this.lst[a].animalName=b;
 
     }else{
       alert('Nepareiza ievade!')
     }
 
-
   }
-  
-  
-  lst: Animals[] = [
-    {
-      animalName:"Žubīte",
-      animalAge: 5,
-      animalType: "Kaķis",
-      imageLink: "https://cdn.pixabay.com/photo/2021/07/13/11/34/cat-6463284_640.jpg"
-    },
-    {
-      animalName:"Žurcis",
-      animalAge: 10,
-      animalType: "Suns",
-      imageLink: "https://viktoriajean.files.wordpress.com/2013/02/pugly.jpg"
-    },
-    {
-      animalName:"Duksis",
-      animalAge: 1,
-      animalType: "Vārna",
-      imageLink: "https://www.allaboutbirds.org/guide/assets/photo/63739491-480px.jpg" 
-    }
-
-  ]
-
-  constructor() {
+  constructor(private animalService: AnimalService) {
   }
 
-  ngOnInit(): void {
-    
+  ngOnInit(): void { 
+    this.getAnimals();
   }
 
+  getAnimals() : void {
+    this.lst = this.animalService.getAnimals();
+  }
 }
 
 export interface Animals {
