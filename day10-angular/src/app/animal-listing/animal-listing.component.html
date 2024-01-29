@@ -1,0 +1,12 @@
+<header>Mājas zvēri!</header>
+<div>
+<input type = "number" [(ngModel)] = "inputValue1" plaveholder="Ievadi kuru kārtas dzīvnieka vārdu vēlies nomainīt"/>
+<input type="text" [(ngModel)] = "inputValue2" placeholder="Ievadi jauno vārdu"/>   
+<button (click) = "newName()">Ievadīt</button>
+</div>
+<div class="frame" *ngFor="let animal of lst">
+    <p>Zvēra vārds: {{animal.animalName}}</p>
+    <p>Zvēra vecums: {{animal.animalAge}}</p>
+    <p> Zvēra tips: {{animal.animalType}}</p>
+    <img [src]="animal.imageLink" alt="Image" class="image">
+</div>
