@@ -16,6 +16,25 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './animal-listing.component.css'
 })
 export class AnimalListingComponent implements OnInit{
+  
+  inputValue1 = "";
+  inputValue2 = "";
+
+  newName(): void{
+    let a = parseInt(this.inputValue1) - 1;
+    let b = this.inputValue2;
+
+    if(a <= this.lst.length){
+      this.lst[a].animalName=b;
+
+    }else{
+      alert('Nepareiza ievade!')
+    }
+
+
+  }
+  
+  
   lst: Animals[] = [
     {
       animalName:"Žubīte",
